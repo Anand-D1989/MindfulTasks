@@ -428,7 +428,8 @@ fun JournalTab(
                     unfocusedTextColor = TextPrimary,
                     focusedBorderColor = EmeraldZen,
                     unfocusedBorderColor = BorderGlass,
-                    containerColor = ObsidianBlack
+                    focusedContainerColor = ObsidianBlack,
+                    unfocusedContainerColor = ObsidianBlack
                 ),
                 shape = RoundedCornerShape(12.dp)
             )

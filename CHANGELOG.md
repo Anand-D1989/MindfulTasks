@@ -65,6 +65,30 @@ To build this app, we had to create several files. Here is an easy guide to what
 
 ---
 
+### 🔧 Update: Fixed Gradle Sync Failure (May 26, 2026)
+* **What we modified**: Simplified the **`settings.gradle.kts`** file.
+* **Why we did it**: The original file had a strict filter list that blocked Google from downloading some essential tools. We removed the filter, giving Google full access to download what it needs. Now, Android Studio will be able to synchronize and compile the app correctly!
+
+---
+
+### 🔧 Update: Upgraded Gradle Wrapper Version (May 26, 2026)
+* **What we modified**: Created the **`gradle-wrapper.properties`** configuration file to force Gradle to version `8.7`.
+* **Why we did it**: The Android compile tools we are using require Gradle version `8.6` or higher, but your system was defaults to version `8.5`. By adding this file, we instructed Android Studio to automatically download and use version `8.7`, which solves the version mismatch crash.
+
+---
+
+### 🔧 Update: Fixed Syntax Typos in Build File (May 26, 2026)
+* **What we modified**: Replaced dashes (`-`) with dots (`.`) in the **`app/build.gradle.kts`** file for three library names (like changing `tooling-preview` to `tooling.preview`).
+* **Why we did it**: Gradle's Kotlin coding language treats dashes as minus signs (subtraction). It was trying to mathematically subtract `preview` from `tooling`, causing a build error! Changing them to dots fixes the grammar so Android Studio understands the library references correctly.
+
+---
+
+### 🔧 Update: Fixed Text Field Color Crash in TaskScreen.kt (May 26, 2026)
+* **What we modified**: Replaced the invalid parameter `containerColor` with `focusedContainerColor` and `unfocusedContainerColor` in the Zen Journal text box settings.
+* **Why we did it**: In this version of Android's styling system, there is no generic "background container color" setting for text input boxes. Instead, Android requires us to specify the background color for both when the box is selected (focused) and when it is unselected (unfocused). Fixing this parameter name stops the compile crash.
+
+---
+
 ### 🏁 What to Do Next:
 Your files are safe and ready in your workspace! To save them on your Mac's Git system:
 1. Open the **Terminal** app on your Mac.
