@@ -52,3 +52,11 @@ local.properties
 Captures/
 .externalNativeBuild/
 .cxx/
+
+# Node.js backend files
+node_modules/
+backend-service/node_modules/
+.env
+backend-service/.env
+backend-service/users.json
+

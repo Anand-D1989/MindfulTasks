@@ -1,0 +1,36 @@
+{
+  "abc": {
+    "password": "123",
+    "tasks": [
+      {
+        "id": "a22f85b7-e776-46de-8c72-b8dc8f77f964",
+        "title": "Morning Meditation",
+        "isCompleted": true,
+        "priority": "HIGH",
+        "category": "Mind"
+      },
+      {
+        "id": "18f179d0-7134-4566-9dfd-aa74d57a2118",
+        "title": "Drink 3L of Water",
+        "isCompleted": false,
+        "priority": "MEDIUM",
+        "category": "Health"
+      },
+      {
+        "id": "eb7a52c3-2af4-4cb1-a02c-f2f865a4caec",
+        "title": "Add a new task in MindfulTasks",
+        "isCompleted": false,
+        "priority": "HIGH",
+        "category": "Skill"
+      }
+    ],
+    "journal": [
+      {
+        "id": "40a14b42-72f8-44fb-9d85-cb853e636d8f",
+        "text": "Signed in successfully and ready to start logging reflections!",
+        "date": "May 27, 2026 • 2:32 AM",
+        "moodEmoji": "🚀"
+      }
+    ]
+  }
+}
